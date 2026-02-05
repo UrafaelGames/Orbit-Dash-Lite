@@ -36,7 +36,7 @@ Get **Cocos2d-x v2.1.5** from this repository made by Chetverockha:
 Use the Python script included in the engine folder to generate a new project:
 
 ```bash
-python create_project.py -project OrbitDash -package com.urafael.orbitdash -language cpp
+python create_project.py -project OrbitDash -package com.urafaelx.orbitdash -language cpp
 ```
 
 ### 3. Replace Files
