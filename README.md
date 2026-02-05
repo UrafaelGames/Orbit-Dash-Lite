@@ -1,4 +1,4 @@
-# OrbitDash Lite 🚀 (Legacy Edition)
+# OrbitDash Lite (Legacy Edition)
 
 **OrbitDash Lite** is an educational rewrite of the original game, specifically developed for the **Cocos2d-x v2.1.5** engine. 
 
