@@ -1,4 +1,4 @@
-# OrbitDash Lite 🚀 (Legacy Edition)
+# OrbitDash Lite (Legacy Edition)
 
 **OrbitDash Lite** is a polished arcade game rewritten from the ground up for **Cocos2d-x v2.1.5**. 
 
