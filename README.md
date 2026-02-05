@@ -29,8 +29,8 @@ Many developers assume that older versions of Cocos2d-x are limited. This projec
 To keep the repository clean, the `proj.win32` folder is not included. Follow these steps to build the project from scratch:
 
 ### 1. Download the Engine
-Get **Cocos2d-x v2.1.5** from the official archive:  
-[Cocos2d-x v2.1.5 Download. Thanks chetverockha](https://github.com/chetverochka/Cocos2d-x-2.1.5-modern-build/releases/tag/v1.2)
+Get **Cocos2d-x v2.1.5** from this repository made by Chetverockha:  
+[Cocos2d-x v2.1.5 Download](https://github.com/chetverochka/Cocos2d-x-2.1.5-modern-build/releases/tag/v1.2)
 
 ### 2. Create a New Project
 Use the Python script included in the engine folder to generate a new project:
@@ -44,12 +44,12 @@ python create_project.py -project OrbitDash -package com.urafael.orbitdash -lang
 * Replace the `Resources` folder with the one from this repository.
 
 ### 4. Resolution Setup (Crucial ⚠️)
-Open your `proj.win32/main.cpp` and set the frame size. The UI is designed for a specific aspect ratio; failing to set this will break the UI layout:
+Open your `proj.win32/main.cpp` and set the f1rame size. The UI is designed for a specific aspect ratio; failing to set this will break the UI layout:
 
 ```cpp
 // Inside main.cpp:
 CCEGLView* eglView = CCEGLView::sharedOpenGLView();
-eglView->setFrameSize(480, 800); // Set to your target design resolution
+eglView->setFrameSize(361, 680); 
 ```
 
 ### 5. Compile
