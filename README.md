@@ -1,51 +1,57 @@
-# OrbitDash Lite (Legacy Edition)
+# OrbitDash Lite  (Legacy Edition)
 
-**OrbitDash Lite** is an educational rewrite of the original game, specifically developed for the **Cocos2d-x v2.1.5** engine. 
+**OrbitDash Lite** is a polished arcade game rewritten from the ground up for **Cocos2d-x v2.1.5**. 
 
-This project serves as a "retro-programming" exercise, where the modern logic from current engine versions was adapted to function within a classic C++ game development environment.
+While originally developed in modern engines like **Cocos2d-x 4.0** and **Axmol**, this version was created to demonstrate that high-quality gameplay and sophisticated UI can still be achieved using "legacy" frameworks. It serves as both a personal gift and a technical case study for the developer community.
+
+---
+
+## 🌟 Why this version? (The "Cool Stuff")
+Many developers assume that older versions of Cocos2d-x are obsolete. This project proves otherwise by showcasing:
+* **Polished UI/UX:** Smooth popups and interactive menus built entirely through code.
+* **Modern Logic in Legacy Syntax:** Back-porting features from Axmol/Cocos4 back to the classic 2.1.5 API.
+* **Pure Performance:** Blazing fast execution and low overhead, typical of the Win32 era.
+* **Syntax Mastery:** A deep dive into the `menu_selector`, `schedule_selector`, and manual memory management (`retain`/`release`) that defined mobile gaming's golden age.
 
 ---
 
 ## 📜 Project Evolution
-The development of OrbitDash has spanned three major technical milestones:
-1. **v1.0 (Original):** Launched using **Cocos2d-x 4.0** (Modern rendering pipeline).
-2. **v1.1 (Update):** Migrated to **Axmol Engine** for enhanced cross-platform compatibility and maintenance.
-3. **Lite Version (Current):** A ground-up reconstruction in **Cocos2d-x 2.1.5** for educational purposes and as a personal gift.
+1. **v1.0 (Original):** Built in **Cocos2d-x 4.0** (Modern C++, Metal/Vulkan support).
+2. **v1.1 (Update):** Migrated to **Axmol Engine** for modern cross-platform maintenance.
+3. **Lite/Legacy (Current):** A complete rewrite in **Cocos2d-x 2.1.5** for educational purposes.
 
 ---
 
-## 🎓 Educational Objectives
-The source code of this version is designed to demonstrate how to solve technical challenges in "legacy" engines:
+## 🎓 Educational Highlights
+If you are looking to learn from this repository, focus on these areas:
 
-* **Layer Management & Touch Priority:** Implementation of popups (Support, Settings, Game Over) that effectively block interaction with underlying layers using the manual `TouchDispatcher` and negative priorities (e.g., `-500`).
-* **Object Lifecycle:** Practical use of `onEnter()` and `onExit()` for dynamic input delegate registration.
-* **Data Persistence:** Handling high scores and local settings using the `CCUserDefault` system.
-* **Native Win32 Integration:** Utilizing `ShellExecuteA` to trigger external system links (social media/support) directly from the Windows executable.
-* **Memory Optimization:** An example of transitioning from modern smart pointers back to manual `retain` and `release` memory management.
+* **Advanced Touch Handling:** See how `TouchDispatcher` is used with negative priorities (e.g., `-500`) to create "impenetrable" modal popups.
+* **Scene Transitions:** Learn how to handle navigation between the Main Menu, Settings, and Gameplay scenes using classic Cocos2d-x patterns.
+* **Win32 Integration:** Implementation of `ShellExecuteA` to bridge the game with the Windows OS for external links.
+* **C++ Memory Management:** A practical look at how the engine's reference counting system works without the safety net of modern smart pointers.
 
 ---
 
-## 🛠️ Build Requirements
-To run or modify this project, you will need:
-* **IDE:** Visual Studio 2019 or higher.
-* **Engine:** Cocos2d-x v2.1.5.
-* **Platform:** Windows (Win32).
+## 🛠️ Build & Technical Requirements
+* **Environment:** Visual Studio 2019 or higher.
+* **Target OS:** Windows (Win32).
+* **Dependencies:** Included in the project (Cocos2d-x 2.1.5 core libs).
 
-> **Note:** Ensure that the engine path is correctly linked in the Visual Studio project properties to match your local environment.
+> **Note:** To run the compiled version, ensure the `.dll` files and the `Resources` content are located in the same directory as the `.exe`.
 
 ---
 
 ## 📦 Repository Structure
-* `/Classes`: Game logic, scene management, and UI layers.
-* `/Resources`: Visual assets (PNG, .fnt fonts) and audio files.
-* `/proj.win32`: Visual Studio project files, icons, and the Win32 entry point.
+* `/Classes`: The "brain" of the game. All `.cpp` and `.h` files.
+* `/Resources`: All game assets (Sprites, Bitmap Fonts, Audio).
+* `/proj.win32`: Visual Studio solution and Windows-specific entry points.
 
 ---
 
-## 🚀 Credits & License
-Developed with dedication by **Urafael**. 
+## 🚀 Credits
+Developed by **Urafael**.
 
-This code is distributed for educational purposes. Feel free to explore, modify, and learn from the foundations of one of the most iconic game engines of the past decade.
+This project is shared with the community to keep the history of game development alive and to show that with good logic, you can create "cool stuff" regardless of the engine version.
 
 ---
-*Created with ❤️ as a special gift and for the developer community.*
+*Created with ❤️ for a special someone and for the global dev community.*
