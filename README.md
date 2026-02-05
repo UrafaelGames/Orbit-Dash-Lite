@@ -49,7 +49,7 @@ If you are looking to learn from this repository, focus on these areas:
 ---
 
 ## 🚀 Credits
-Developed by **Urafael**.
+Developed by **Urafael Games**.
 
 This project is shared with the community to keep the history of game development alive and to show that with good logic, you can create "cool stuff" regardless of the engine version.
 
